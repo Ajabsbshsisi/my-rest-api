@@ -34,7 +34,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/@renlikesmoon/my-rest-api
+    - uses: actions/checkout@renlikesmoon/my-rest-api
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
