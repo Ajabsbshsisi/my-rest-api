@@ -22,9 +22,8 @@ jobs:
 steps:
   # Pipe Frontend
   - name: Install dependencies
-    working-directory: ./package.json
-  - name: Tests
-    working-directory: ./package.json
+  - working-directory: ./package.json
+  - name: Test
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
