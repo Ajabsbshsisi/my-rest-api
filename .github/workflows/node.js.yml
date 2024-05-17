@@ -23,10 +23,10 @@ steps:
   # Pipe Frontend
   - name: Install dependencies
     working-directory: ./package.json
-    run: npm install
+  - run: npm install
   - name: Tests
     working-directory: ./package.json
-    run: npm test
+    - run: npm test
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
